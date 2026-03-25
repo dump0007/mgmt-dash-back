@@ -13,7 +13,7 @@ dotenv.config();
 
 @Module({
   imports: [
-    MongooseModule.forRoot(process.env.MONGODB_URL||""),
+    MongooseModule.forRoot("mongodb+srv://crazybuooy:6L0JjzK7LFVGfIX8@crazy.a9atq.mongodb.net/mgmt-dashboard"),
     UsersModule,
     ProjectsModule,
     AuthModule,
