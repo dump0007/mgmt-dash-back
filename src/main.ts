@@ -27,6 +27,6 @@ async function bootstrap() {
     console.log('Seed: Admin user created (admin@mgmt.com / admin123) lol');
   }
 
-  await app.listen(process.env.PORT ?? 9000);
+  await app.listen(process.env.PORT ||3000);
 }
 bootstrap();
