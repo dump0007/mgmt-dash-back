@@ -3,6 +3,9 @@ import { AppModule } from './app.module';
 import { UsersService } from './users/users.service';
 import * as bcrypt from 'bcrypt';
 import { UserRole, AccountStatus } from './schemas/user.schema';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
