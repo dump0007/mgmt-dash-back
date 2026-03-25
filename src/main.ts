@@ -24,7 +24,7 @@ async function bootstrap() {
       account_status: AccountStatus.ACTIVE,
       allocated_projects: []
     });
-    console.log('Seed: Admin user created (admin@mgmt.com / admin123)');
+    console.log('Seed: Admin user created (admin@mgmt.com / admin123) lol');
   }
 
   await app.listen(process.env.PORT ?? 9000);
