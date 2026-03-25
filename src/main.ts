@@ -26,7 +26,8 @@ async function bootstrap() {
     });
     console.log('Seed: Admin user created (admin@mgmt.com / admin123) lol');
   }
-
-  await app.listen(process.env.PORT ||3000);
+  const port = process.env.PORT ||3000;
+  console.log(`Server is running on port ${port}`);
+  await app.listen(port,'0.0.0.0');
 }
 bootstrap();
