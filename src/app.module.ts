@@ -10,7 +10,7 @@ import { SprintsModule } from './sprints/sprints.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://127.0.0.1:27017/mgmt-dashboard'),
+    MongooseModule.forRoot(process.env.MONGODB_URL||""),
     UsersModule,
     ProjectsModule,
     AuthModule,
